@@ -1,16 +1,214 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Stock</title>
+    <title>Stock Aware</title>
     <%= csrf_meta_tags %>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </head>
+<style>
+body{
+  padding-top: 40px;
+}
+</style>
 
-  <body>
-    <!-- for every single page -->
-    <%= yield %>
-    <!-- for footers and such -->
-  </body>
-</html>
+<body>
+
+
+  <!--navbar-->
+  <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type= "button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+
+        </button>
+
+        <a href= " " class="navbar-brand">Stock Aware</a>
+      </div><!--end of navbar header-->
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <a href= " " class="btn info navbar-btn btn-success navbar-right">Download Now</a>
+        <ul class="nav navbar-nav">
+          <li><a href="#About us">About us</a>
+            <li><a href="#Bulls VS Bears">Bulls VS Bears</a>
+              <li><a href="#Contact Us">Contact Us</a>
+              </ul>
+            </div>
+
+          </div><!--end of container-->
+
+
+        </nav><!--end of navbar-->
+
+        <!--Start of background color-->
+
+        <style type="text/css">
+        body { background: black!important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+        </style>
+
+        <!--End of background color-->
+
+        <!--jumbotron-->
+        <div class="something">
+          <div class="container text-center">
+            <div class="video-background">
+              <div class="video-tag">
+
+                <video preload="true" width="100%" height="100%" autoplay loop="loop" muted >
+                  <source src="intro_video.mp4" type="video/mp4">
+                  </source>
+                </video>
+
+              </div>
+              <div>
+                <div class="different-font-color">
+
+                  <h1 class="font-size" style="color:clear;">Stock Aware</h1>
+
+
+                  <p><h3 style="color:white;"> Do you want to know which stocks move the most? </p></h3>
+                </div>
+                <div>
+
+                  <a href =" " class="btn btn-lg btn-success">Yes, of course!</a>
+                  <!-- <div class="btn btn-space"> -->
+                  <a href ="http://www.infinitenites.com/wp-content/uploads/2015/02/good-luck-with-that2.jpg" class="btn btn-lg btn-danger">No, not at this time.</a>
+
+          <!-- <span style="color:white;" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> -->
+
+                  <!-- </div> -->
+                </div>
+                <span style="color:white;" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                <!-- end of container-->
+              </div>
+            </div>
+          </div><!-- end of jumbotron -->
+
+
+
+          <!--About us-->
+
+          <div class="text-center">
+            <section>
+              <div class="page" id="About us">
+                <h2 style="color:white;"> About us:<small><p style="color:white;"><p style="color:white;">This is a brief bio about the creators of this WebApp </p></small></h2>
+
+
+                <!--end of page headers-->
+
+                <div class="row">
+                  <h3 style="color:white;"> Rafael Hernandez</h3>
+                  <p style="color:white;">Software developer and stock enthusuaist</p>
+                  <div class="col-lg-20">
+                  </div>
+                  <div class="col-lg-10">
+                  </div>
+                  <div class="row">
+                    <h3 style="color:white;">Ricardo Morales</h3>
+                    <p style="color:white;">Software developer and stock enthusuaist</p>
+                    <div class="col-lg-8">
+                    </div>
+                    <div class="col-lg-4">
+                      <!--<a href="http://imgur.com/X3uSh6O"class="img-responsive"><img src="http://i.imgur.com/X3uSh6O.jpg" title="source: imgur.com" />class="img-responsive"</a>-->
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div><!--end of container-->
+          </div>
+
+          <!--Bulls VS Bears-->
+
+          <div class="jumbotron">
+
+
+
+            <%= yield %>
+
+
+
+                <!-- <section>
+                  <div class="well">
+                    <div class="container text-center">
+                  <div class="page-header" id="Bulls VS Bears">
+
+                    <h2>Bulls VS Bears.<small><p>Which market do you choose?  </p></small></h2>
+
+                    <div class="container text-center">
+                      <section class="hero4">
+                      </div>
+                      <div class="col-md-12"><h2>Try it for yourself!</h2>
+                      </div>
+                      <div class="row">
+                      </div>
+                      <div class="col-md-8">
+                        <a href="#"><img src=""></a>
+                      </div>
+                      <div class="col-md-2 col-md-offset-0">
+                        <a href="#"><img src=""></a>
+                      </div>
+                      <div class="col-xs-4">
+                        <label for="ex1">Input stock name </label>
+                        <input class="form-control" id="ex1" type="text">
+                      </div>
+                      <div class="col-xs-4">
+                        <label for="ex2">Input amount of money here</label>
+                        <input class="form-control" id="ex2" type="float">
+                      </div>
+                      <div class="col-xs-4">
+                        <label for="ex3">Results</label>
+                        <input class="form-control" id="ex3" type="float">
+                      </section> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+              <!-- call to action -->
+              <section>
+                <div class="well">
+                  <div class="container text-center">
+                    <h1> Do you feel lost? Send us your questions. </h1>
+                    
+                    <p> Enter your name and email: </p>
+                    <form action=" " class"form-inline">
+                      <div class="form-group">
+                        <label for="Contact Us">Contact us</label>
+                        <input type="text" class=" form-control" id="Contact Us" placeholder="Your name">
+                      </div>
+                      <form action=" " class"form-inline">
+                        <div class="form-group">
+                          <label for="email">Email address</label>
+                          <input type="text" class=" form-control" id="email" placeholder="Enter your email:">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                        <hr>
+
+
+                      </form>
+                    </div><!--end of container-->
+                  </div><!--end of well-->
+                </section><!--call to action-->
+
+                <!-- Empty -->
+                <div class="jumbotron">
+                  <div class="text-center">
+                  </div>
+                </div>
+
+
+              </body>
+              </html>

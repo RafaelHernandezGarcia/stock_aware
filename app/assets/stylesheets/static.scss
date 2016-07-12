@@ -1,3 +1,31 @@
 // Place all the styles related to the static controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.video-tag{
+height: 100%;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -99;
+
+}
+.text-center{
+ margin-top: 17%;
+
+}
+.different-font-color{
+color: white;
+}
+.font-size{
+ font-size: 850%;
+}
+.glyphicon {
+  font-size: 25px;
+   display:block;
+   text-align:center;
+}
+.btn-success {
+   padding-left: 29px;
+   padding-right: 29px;
+}
