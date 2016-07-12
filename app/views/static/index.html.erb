@@ -1,0 +1,42 @@
+<section>
+  <div class="well">
+    <div class="container text-center">
+      <div class="page-header" id="Bulls VS Bears">
+
+        <h2>Bulls VS Bears.<small><p>Which market do you choose?  </p></small></h2>
+
+        <div class="container text-center">
+          <section class="hero4">
+          </div>
+          <div class="col-md-12"><h2>Try it for yourself!</h2>
+          </div>
+          <div class="row">
+          </div>
+          <div class="col-md-8">
+            <a href="#"><img src=""></a>
+          </div>
+          <div class="col-md-2 col-md-offset-0">
+            <a href="#"><img src=""></a>
+          </div>
+          <%= form_tag '/results', method: 'get' do %>
+            <%= label_tag :stock %>
+            <%= text_field_tag :stock %><br>
+            <%= label_tag :amount_invested %>
+            <%= text_field_tag :amount_invested %><br>
+            <%= submit_tag 'Calculate' %>
+          <% end %>
+          </section>
+
+
+
+          <!-- <div class="col-xs-4">
+          <label for="ex1">Input stock name </label>
+          <input class="form-control" id="ex1" type="text">
+        </div>
+        <div class="col-xs-4">
+        <label for="ex2">Input amount of money here</label>
+        <input class="form-control" id="ex2" type="float">
+      </div>
+      <div class="col-xs-4">
+      <label for="ex3">Results</label>
+      <input class="form-control" id="ex3" type="float"> -->

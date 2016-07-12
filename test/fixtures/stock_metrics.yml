@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  symbol: MyString
+  company_name: MyString
+  beginning_price: MyString
+  last_change: MyString
+  percent: MyString
+  high: MyString
+  low: MyString
+  volume: MyString
+  time: MyString
+
+two:
+  symbol: MyString
+  company_name: MyString
+  beginning_price: MyString
+  last_change: MyString
+  percent: MyString
+  high: MyString
+  low: MyString
+  volume: MyString
+  time: MyString
